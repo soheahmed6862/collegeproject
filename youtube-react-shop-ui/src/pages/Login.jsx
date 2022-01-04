@@ -70,12 +70,14 @@ const Link = styled.a`
 
 const Login = () => {
   const dispath=useDispatch()
-  const cart=useSelector(state=>state.user)
+  const cart=useSelector(state=>state.user.currentUser)
  console.log(cart)
 
   const [username,setUsername] =useState("");
   const [password,setPassword] =useState("");
   const{isdisable,error}=useSelector(state=>state.user)
+  
+
 
  
   
@@ -84,6 +86,7 @@ const Login = () => {
   login(dispath,{username,password});
 
     console.log(username,password);
+  
 
   }
   return (
@@ -93,7 +96,11 @@ const Login = () => {
         <Form>
           <Input placeholder="username" type="text" onChange={(e)=> setUsername(e.target.value)} />
           <Input placeholder="password" type="password" onChange={(e)=> setPassword(e.target.value)} />
-          <Button onClick={handlelogin} disabled={isdisable}>LOGIN</Button>
+          <Button onClick={handlelogin} >LOGIN</Button>
+
+      {
+        error &&  <p>something is wrong</p>
+      }
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
           <Link>CREATE A NEW ACCOUNT</Link>
         </Form>

@@ -14,9 +14,9 @@ const userSlice=createSlice({
 
  },
  loginsuccess:(state,action)=>{
-state.isFetching=false;
-state.currentUser=action.payload
-console.log(state.currentUser)
+  state.isFetching=false;
+ state.currentUser=action.payload
+
  },
  loginfail:(state,action)=>{
      state.isFetching=false;
