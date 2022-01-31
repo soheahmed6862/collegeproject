@@ -1,0 +1,39 @@
+.succsess{
+    width:100%;
+    height:100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.card{
+    width:350px;
+    height: 500px;
+     /* background-color:white; */
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.26);
+}
+
+.inner_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card_fonts{
+    position:absolute;
+
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    backface-visibility: hidden;
+ 
+   text-align: center;
+
+    padding:55px;
+
+   
+}

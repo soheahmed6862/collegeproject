@@ -16,6 +16,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "react-stripe-checkout": "^2.6.3",
+    "react-to-print": "^2.14.4",
     "styled-components": "^5.3.1",
     "web-vitals": "^1.0.1"
   },
